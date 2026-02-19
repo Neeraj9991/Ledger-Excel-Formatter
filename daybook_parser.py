@@ -16,8 +16,9 @@ A TRANSACTION BLOCK starts when:
   - Col B matches a ledger in the ledger set.
 
 Output schema (one row per cost-centre OR creditor entry):
-  Date | Ledger | Vch Type | Vch No. | Total Debit | Particulars | Amount | Type
+  Date | Ledger | Vch Type | Vch No. | Particulars | Dr/Cr | Amount | Type
   where Type = "Cost Centre" or "Creditor"
+  Dr/Cr = "Dr" for cost-centre rows, "Cr" for creditor rows
 """
 
 import re
@@ -142,7 +143,7 @@ def parse_daybook(file, ledger_path: str | Path = "ledger.txt") -> pd.DataFrame:
     current_vch_no = None
 
     # Accumulate sub-rows separately
-    cost_centres: list[dict] = []   # {"name": str, "amount": float|None}
+    cost_centres: list[dict] = []   # {"name": str, "amount": float|None, "dr_cr": str}
     creditors: list[dict] = []      # {"name": str, "amount": float|None}
 
     def flush():
@@ -158,19 +159,21 @@ def parse_daybook(file, ledger_path: str | Path = "ledger.txt") -> pd.DataFrame:
         }
 
         if not cost_centres and not creditors:
-            records.append({**common, "Particulars": "", "Amount": None, "Type": ""})
+            records.append({**common, "Particulars": "", "Debit/Credit": "", "Amount": None, "Type": ""})
             return
 
         for cc in cost_centres:
             records.append({**common,
                             "Particulars": cc["name"],
                             "Amount": cc["amount"],
+                            "Debit/Credit": cc.get("dr_cr", "Dr"),
                             "Type": "Cost Centre"})
 
         for cr in creditors:
             records.append({**common,
                             "Particulars": cr["name"],
                             "Amount": cr["amount"],
+                            "Debit/Credit": "Cr",
                             "Type": "Creditor"})
 
     # ── Row iteration ────────────────────────────────────────────────────────
@@ -178,13 +181,14 @@ def parse_daybook(file, ledger_path: str | Path = "ledger.txt") -> pd.DataFrame:
         col_a = _clean(row.get("A", ""))
         col_b = _clean(row.get("B", ""))
         col_c = _clean(row.get("C", ""))
+        col_d = _clean(row.get("D", ""))
         col_e = _clean(row.get("E", ""))
         col_f = _clean(row.get("F", ""))
         col_g = _clean(row.get("G", ""))
         col_h = _clean(row.get("H", ""))
 
         # Skip completely empty rows.
-        if not any([col_a, col_b, col_c, col_e, col_f, col_g, col_h]):
+        if not any([col_a, col_b, col_c, col_d, col_e, col_f, col_g, col_h]):
             continue
 
         # Skip footer / summary rows (e.g. "Total:", "Grand Total").
@@ -217,9 +221,11 @@ def parse_daybook(file, ledger_path: str | Path = "ledger.txt") -> pd.DataFrame:
         if _is_excluded(col_b):
             continue
 
-        # Cost-centre row: col_b = CC name, col_c = Dr amount.
+        # Cost-centre row: col_b = CC name, col_c = Dr amount, col_d = Dr/Cr tag.
         if col_b and col_c:
-            cost_centres.append({"name": col_b, "amount": _to_float(col_c)})
+            # col_d normally contains "Dr" — fall back to "Dr" if blank.
+            dr_cr_tag = col_d.strip() if col_d.strip() else "Dr"
+            cost_centres.append({"name": col_b, "amount": _to_float(col_c), "dr_cr": dr_cr_tag})
             continue
 
         # Creditor row: col_b = creditor name, col_h = credit amount.

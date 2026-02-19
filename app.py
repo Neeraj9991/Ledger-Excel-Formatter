@@ -411,6 +411,14 @@ if uploaded_file:
         )
         st.stop()
 
+    # Ensure Debit/Credit column exists and reorder so it sits after Amount.
+    if "Debit/Credit" not in df.columns:
+        df["Debit/Credit"] = ""
+    col_order = [c for c in ["Date", "Ledger", "Vch Type", "Vch No.",
+                              "Particulars", "Amount", "Debit/Credit", "Type"]
+                 if c in df.columns]
+    df = df[col_order]
+
     # ── Summary Metrics ───────────────────────────────────────────────────────
     cc_total     = df.loc[df["Type"] == "Cost Centre", "Amount"].dropna().sum()
     cr_total     = df.loc[df["Type"] == "Creditor",    "Amount"].dropna().sum()
@@ -564,7 +572,7 @@ if uploaded_file:
 
         col_widths = {
             "Date": 13, "Ledger": 42, "Vch Type": 12, "Vch No.": 22,
-            "Particulars": 38, "Amount": 15, "Type": 13,
+            "Particulars": 38, "Amount": 15, "Debit/Credit": 10, "Type": 13,
         }
 
         # Write header
