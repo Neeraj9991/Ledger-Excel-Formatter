@@ -16,6 +16,13 @@
 # Mono auto generated files
 mono_crash.*
 
+# Python auto generated files
+__pycache__
+
+# virtual environment
+.venv/
+venv/
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
