@@ -160,8 +160,203 @@ Consultancy Charges
 Repair & Maint. Computer
 Tour & Travling Exp.
 PRINTING & STATIONARY 18%
-PRINTING & STATIONARY 18%
 Repair & Maint. Vehicle -Non QRT
 CONSUMABLE EXP.
 Registration Charges
 PRINTING & STATIONARY 18%
+Exp. Head
+Expenses (Direct) (Direct Expenses)
+Establishment Expenses
+UNIFORM EXP.
+Dress Deduction
+Uniform Exp @ 18% Inter State Purchases
+Uniform Exp. @ 5% Inter State
+UNIFORM EXP. (GST)
+BONUS EXP.
+E Pf Employer Contribution
+ESI - EMPLOYEE
+ESI - EMPLOYER
+"Exempt Salary		"
+FULL & FINAL SETTELMENT
+ID card Deduction
+Irregular Staff
+Leave Encashment Exp.
+LWF Employer
+Medical. Deduction
+Notice Period Exp.
+Other Deduction
+Pasara Deduction
+Police Verification  Deduction
+Salary Sites
+SALARY (SUBODH)
+Sleeping Deduction
+STAFF SALARY EXP.
+Consultancy Charges
+DAMAGES CHALLAN ESI
+Diesel & Fuel Exp
+Gratuity Exp.
+MEAL DEDUCTION
+Notice Period Recovery
+Outsorce Manpower
+Security Services Outsorce
+Stipend Exp.
+Expenses (Indirect) (Indirect Expenses)
+FEE CHARGES
+Filling Fee
+Loan Processing Fee
+MCA Challan Fee
+INSURANCE CHARGES
+Computer Insurance
+Vehicle Insurance Exp.
+INTEREST PAID
+Interest And Penalty
+Interest Charges on Sbd
+INTEREST ON CAR LOAN
+INTEREST ON ICICI UN SECURE LOAN
+INTEREST ON ROOT MACHINE
+OFFICE EXPENSE
+OFFICE EXPENSES
+OFFICE EXP NON GST
+PRINTING & STATIONERY
+PRINTING & STATIONARY
+PRINTING & STATIONARY 18%
+PRINTING & STATIONERY 5%
+PRINTING & STATIONERY GST
+PRINTING & STATIONERY NON GST
+PURCHASE STATIONARY @5%
+PROFESSIONAL & CONSULTANCY CHARGES
+Audit Fee
+Consultancy Charges - GST
+CO-ORDINATION CHARGES WITH LOCAL DWELLERS (CONSULTENCY CHARGES)
+GST AUDIT
+Professional & Consultancy Charges
+TAX AUDIT & ITR
+RENTAL CHARGES
+D G RENT @ 18%
+HIRE CHARGES (CRANE)
+LEASE RENT OF LAND SEC.76
+RENTAL CHARGES (DUMPING)
+RENTAL CHARGES (GPRS)
+Rental Service at Site
+RENTAL TRACTOR TROLLY CHARGES
+RENTAL-WATER TANKER CHARGES
+Room Rent for Commando
+REPAIR & MAINTENANCE
+AMC Repair & Maintenance - P&M
+AMC Repair & Maintenance - Vehicle
+Repaire & Maintenance of Vehicle@28 %
+REPAIR & MAINTENANCE
+Repair & Maintenance of Vehicle
+Repire & Maintenance of Vehicle@18%
+STAFF WELFARE EXP.
+STAFF WELFARE EXP.
+STAFF WELFARE EXP. SITE
+TELEPHONE/MOBILE & INTERNET CHARGES
+Internet Charges
+Telephone/Mobile Exp. (Airtel)
+Telephone/Mobile Exp. (Vodafone)
+TRAINING CENTER
+DAIRY  & MILK EXP.
+FOOD & GROCERY EXP.
+FRUITS & VEGETABLE Exp.
+Grocery  Exp.
+Kitchen Utensils Exp.
+Water Expenses
+AMC Repair & Maintenance - Software
+BANK CHARGES
+Bill Required
+BRANCH OFFICE RENT
+BUILDING INSURANCE
+BUSINESS PROMOTION
+Car Loan EMI
+"CGTMSE FEE
+"
+Commission Charges on Sbd
+CONSULTANCY EXPENSES
+CONSUMABLE EXP.
+CONVEYANCE
+CSR activities exp.
+DAMAGES CHALLAN EPFO
+Deferred Tax
+Depreciation
+Directors’ Remuneration
+DISCOUNT& REBATE
+Diwali & Festival Exp.
+Electricity Exp.
+Epf - Employee
+ESI Employer Contribution
+Ex gratia exp.
+Extended Warranty
+Extra Amount
+FEE/LEGAL EXP
+FEES (DCP/EAST DISTT., DELHI
+FORECLOSURE CHARGES
+Freight Charges
+GARBAGE CLEANING EXP.
+GARDENING EXP.
+Group Medical Exp.
+Icici Pay Card
+INCENTIVE Expenses.
+"Income tax expense of earlier years
+"
+Income Tax Exp. for F.Y-2022-23
+Insurance Exp.
+INSURANCE EXP. (OD ACCOUNT)
+INTEREST ON GST LATE PAYMENT
+ISO CERTIFICATION
+KITCHEN GAS EXP.
+LATE FEE GST
+Laundry & dry cleaning exp.
+LAUNDRY EXP.
+LIAISONING CHARGES
+Licence Fee
+Mail and communication expenses
+MEDICAL EXP.
+MISC. DONATION
+MISC. EXP.
+NATIONAL FESTIVAL EXP.
+Od Interest Charges
+Od Interest Idfc Bank
+OD PROCESSING FEE
+OFFICE RENT SEC.85 GURGAON
+OTHER DEDUCTION BY CLIENT
+PASARA LICENSE FEE
+Payroll Processing Charges
+Police Verification
+POSTAGE & STAMP
+Preliminary Exp. W/o
+PREPAID EXP.
+PRINTRING & STATIONAERY NON-GST
+Promotional Activity
+Rates & Taxes
+RECRUITMENT EXP.
+Registration Charges
+Rental Charges (JCB)
+RENTAL FLOOR FOR STAFF
+REPAIRE & MAINTENANCE OF PLANT & MACHINERY
+Repair & Maint. Computer
+Repair & Maint. Vehicle -Non QRT
+Repair & Maint. Vehicle - QRT
+RETAINERSHIP FEES
+ROC FEE
+Roundoff
+Salary Indirect Exp OP
+SEARCH MIRROR
+Site Exp.
+SOFTWARE RENEWAL CHARGES
+STAMP REGISTRATION CHARGES
+TENDER FEE
+Toll Charge ( Fastag Recharge)
+Tour & Travling Exp.
+Trademark Charges
+TRAINING & CERTIFICATION
+TV Recharge
+UNIFORM  ALTERATIONS
+Uniform Exp @ 12%
+Vehicle Insurance -Company Owned Vehicle)
+Vehicle Registraction Charges
+Vehicle Related Other Exp
+Vehicle Running Exp.
+WEBSITE EXP.
+WRITE OFF
+
